@@ -1,3 +1,86 @@
-h1 {
-    color: red;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efefef;
+    margin: 0;
+    color: #282828;
+}
+
+.topbar{
+    background-color: #282828;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.topbar > h1 {
+    margin: 0;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 20rem;
+}
+
+.new-stuff{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.new-stuff > label{
+    width: 100%;
+    margin-bottom: 0.6rem;
+    margin-left: 0.1rem;
+    font-style: italic;
+}
+
+.new-stuff > input{
+    margin-right: 1rem;
+    width: 1px;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+    flex-grow: 1;
+    border: 0;
+    outline: 1px solid #999999;
+    background-color: #fcfcfc;
+    border-radius: 2px;
+}
+
+.new-stuff > input:focus {
+    outline: 3px solid #282828;
+    background-color: #ffffff;
+}
+
+.new-stuff > button{
+    background-color: #282828;
+    color: white;
+    border: 0;
+    outline: 1px solid #282828;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.new-stuff > button:focus {
+    outline: thick double #282828;
+}
+
+.stuff-heading {
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #999;
+    padding-bottom: 0.5rem;
+    padding-left: 0.1rem;
+}
+
+.stuff {
+    padding-left: 1.5rem;
+}
+
+.stuff > li {
+    padding-left: 0.4rem;
+    margin-bottom: 0.6em;
 }
