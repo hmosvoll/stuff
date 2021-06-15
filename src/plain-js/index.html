@@ -8,30 +8,22 @@
     <title>Stuff</title>
 
     <link href="index.css" rel="stylesheet">
+
+    <script src="index.js" type="module" ></script>
 </head>
 <body>
     <div class="topbar">
         <h1>Stuff</h1>
     </div>
     <div class="content">
-        <section class="new-stuff">
-            <label for="add-new-stuff">Add new stuff</label>
-            <input id="add-new-stuff" autofocus>
-            <button type="button">Add</button>
-        </section>
+        <form id="add-stuff" class="new-stuff">
+            <label for="add-stuff-input">Add new stuff</label>
+            <input id="add-stuff-input" autofocus>
+            <button>Add</button>
+        </form>
         <section>
             <h2 class="stuff-heading">Your stuff</h2>
-            <ul class="stuff">
-                <li>
-                    Something
-                </li>
-                <li>
-                    Some thing?
-                </li>
-                <li>
-                    !Nothing
-                </li>
-            </ul>
+            <ul id="stuff" class="stuff"></ul>
         </section>
     </div>
 </body>
